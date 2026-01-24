@@ -46,7 +46,7 @@ void loop() {
     pinMode(passive_buzzer_pin, LOW);
   }
 
-  if (distance1 > distance2 or distance1 > distance2) {
+  if (distance1 > distance2 + 1) {
     bad_count += 1; 
   } 
 
