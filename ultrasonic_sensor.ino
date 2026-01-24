@@ -7,8 +7,8 @@ int echo_pin1 = 13;
 int trig_pin2 = 4;
 int echo_pin2 = 3;
 int passive_buzzer_pin = 8;
-int current_address = 0;
-bool file_done = 0;
+int currentaddress = 0;
+bool filedone = 0;
 
 SR04 sensor1 = SR04(echo_pin1, trig_pin1);
 SR04 sensor2 = SR04(echo_pin2, trig_pin2);
@@ -20,7 +20,7 @@ int num_alerts = 0; // number of times you received the buzzer alert
 
 void setup() {
   // put your setup code here, to run once:
-  sessionStartTime = millis(); // begins recording time for session
+  //sessionStartTime = millis(); // begins recording time for session
   pinMode(passive_buzzer_pin, OUTPUT);
   Serial.begin(9600);
   delay(1000);
